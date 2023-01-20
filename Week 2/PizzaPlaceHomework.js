@@ -11,6 +11,8 @@ console.log(`Welcome to ${pizzaPlace}, where we serve the finest pizza using onl
 
 if(numberOfToppings < 10){
   console.log("Quality not quantity.");
+} else {
+  console.log("A whole lot of Pizza.");
 }
 
 
