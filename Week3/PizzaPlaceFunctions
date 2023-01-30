@@ -1,0 +1,41 @@
+let pizzaToppings = ["pepperoni", "cheese", "sausage", "olives"];
+
+function greetCustomer(){
+  let topping = "";
+  for(let i = 0; i < pizzaToppings.length; i++ ){
+topping += pizzaToppings[i] + ", ";
+  }
+  console.log("Welcome in! Our toppings are " + topping);
+}
+
+
+
+function getPizzaOrder(size, crust, ...myRestParam){
+console.log('One ' + size  + crust  + ' pizza with ' + myRestParam + " coming up!");
+return [size, crust, toppings];
+}
+
+
+
+function preparePizza([size, crust, toppings]){
+console.log("...Cooking Pizza...");
+let pizza = {
+size: "large ",
+crust: "thick crust ",
+toppings: "Pepperoni, olives, and cheese",
+};
+return pizza;
+}
+
+function servePizza(pizza){
+console.log(`Order up! Here's your ${pizza[size]} ${pizza[crust]} crust pizza with ${pizza[toppings]}  Enjoy!`);
+}
+return pizza;{
+
+}
+
+
+greetCustomer();
+getPizzaOrder("large ", "thick crust ", "pepperoni, olives, and cheese ");
+preparePizza(pizza);
+servePizza()
