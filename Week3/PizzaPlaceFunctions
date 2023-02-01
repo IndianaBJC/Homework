@@ -1,41 +1,63 @@
-let pizzaToppings = ["pepperoni", "cheese", "sausage", "olives"];
+const pizzaToppings = ["pepperoni", "mushrooms", "onions", "sausage"];
 
-function greetCustomer(){
-  let topping = "";
-  for(let i = 0; i < pizzaToppings.length; i++ ){
-topping += pizzaToppings[i] + ", ";
+function greetCustomer() {
+  console.log("Welcome to Pizza House, our toppings are: ");
+  for (const topping of pizzaToppings) {
+    console.log(topping);
   }
-  console.log("Welcome in! Our toppings are " + topping);
 }
+
+
+
+
+
+//let pizzaToppings = ["pepperoni", "cheese", "sausage", "olives"];
+
+//function greetCustomer(){
+ // let topping = "";
+ // for(let i = 0; i < pizzaToppings.length; i++ ){
+//topping += pizzaToppings[i] + ", ";
+ /// }
+ // console.log("Welcome in! Our toppings are " + topping);
+//}
 
 
 
 function getPizzaOrder(size, crust, ...myRestParam){
-console.log('One ' + size  + crust  + ' pizza with ' + myRestParam + " coming up!");
-return [size, crust, toppings];
+  let message = 'One ' + size  + crust  + ' pizza with '
+  for (let order of myRestParam){
+    message = message + order + ", ";
+  }
+
+console.log(message + " coming up!");
+return [size, crust, myRestParam];
 }
 
 
-
-function preparePizza([size, crust, toppings]){
+function preparePizza(pizza){
 console.log("...Cooking Pizza...");
-let pizza = {
-size: "large ",
-crust: "thick crust ",
-toppings: "Pepperoni, olives, and cheese",
+let output = {
+size: pizza[0],
+crust: pizza[1],
+toppings: pizza[2],
 };
-return pizza;
+return output;
 }
 
 function servePizza(pizza){
-console.log(`Order up! Here's your ${pizza[size]} ${pizza[crust]} crust pizza with ${pizza[toppings]}  Enjoy!`);
+let message = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `
+for (let order of pizza.toppings){
+message += order + ", ";
 }
-return pizza;{
+console.log(message);
+return pizza;
 
 }
 
 
 greetCustomer();
-getPizzaOrder("large ", "thick crust ", "pepperoni, olives, and cheese ");
-preparePizza(pizza);
-servePizza()
+const order = getPizzaOrder("large ", "thick crust ", "pepperoni", "olives", "cheese");
+
+const pizza = preparePizza(order);
+servePizza(pizza);
+
