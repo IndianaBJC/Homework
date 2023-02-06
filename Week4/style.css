@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  background-color: #C0E0DE;
+  color: #324A5F;
+}
+
+
+img{
+  width: 35%;
+  length: 25%;
+  border: 10px solid white;
+  border-style: groove;
+  box-shadow: 10px 10px;
+}
+
+ul > li {
+  margin: 5px;
+}
+
+ul{
+  margin 5px;
+}
+
+.border-collie-header{
+  background-color: #B49A67;
+}
+
+#german-shepard-header{
+  background-color: #B49A67;
+}
+.poodle-header{
+  background-color: #B49A67;
+}
