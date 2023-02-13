@@ -3,23 +3,10 @@ const pizzaToppings = ["pepperoni", "mushrooms", "onions", "sausage"];
 function greetCustomer() {
   console.log("Welcome to Pizza House, our toppings are: ");
   for (const topping of pizzaToppings) {
-    console.log(topping);
+    console.log(`${topping}`);
   }
 }
 
-
-
-
-
-//let pizzaToppings = ["pepperoni", "cheese", "sausage", "olives"];
-
-//function greetCustomer(){
- // let topping = "";
- // for(let i = 0; i < pizzaToppings.length; i++ ){
-//topping += pizzaToppings[i] + ", ";
- /// }
- // console.log("Welcome in! Our toppings are " + topping);
-//}
 
 
 
