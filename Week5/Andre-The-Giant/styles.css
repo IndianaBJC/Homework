@@ -1,0 +1,65 @@
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  height: 100%;
+
+}
+
+div {
+  border: 2px solid burlywood;
+  margin: 10px;
+}
+
+#introPic {
+  float: center;
+}
+
+#bio, #achievements {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+#bio > li {
+  padding:2px;
+  width: 200px;
+}
+
+#pro {
+  width: auto;
+}
+
+@media
+and (min-width: 414px;)
+and (max-width: 736px;)
+{}
+
+
+#introPic{
+
+}
+
+#proCareer < *{
+
+  font-size: 18px;
+}
+#hulkPic, #smallGuys, #Dagoth{
+  width: 100%;
+}
+
+#achievements > li{
+  padding:2px;
+  width: 200px;
+}
