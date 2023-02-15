@@ -41,14 +41,14 @@ align-items: center;
   width: auto;
 }
 
-@media
-and (min-width: 414px;)
-and (max-width: 736px;)
-{}
+
 
 
 #introPic{
 
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
 }
 
 #proCareer < *{
